@@ -18,12 +18,9 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '13.0'
 
     s.source_files = [
-        'src/**/*',
-        'extensions/**/*',
-        'catomic/**/*{.c,.h}'
+        'src/**/*{.c,.h,.inc}',
+        'extensions/**/*{.c,.h}',
     ]
-
     s.preserve_paths = "Sources/**/**/*"
-
     s.public_header_files = "Sources/**/**/*.h"
 end
